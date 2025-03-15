@@ -21,6 +21,8 @@ namespace CodeBase.Services
         }
 
         public Action onSceneLoaded;
+        public Action onItemDelivered;
+        public Action onPlayerWin;
 
     }
 }

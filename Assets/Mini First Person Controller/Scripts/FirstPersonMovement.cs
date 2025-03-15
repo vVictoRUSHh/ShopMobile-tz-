@@ -38,7 +38,7 @@ public class FirstPersonMovement : MonoBehaviour
 
         // Get targetVelocity from input.
         Vector2 targetVelocity =new Vector2( Game._inputService._inputAxis.x * targetMovingSpeed, Game._inputService._inputAxis.y * targetMovingSpeed);
-
+        print(Game._inputService);
         // Apply movement.
         rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
     }
